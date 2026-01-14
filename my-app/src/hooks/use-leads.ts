@@ -1,5 +1,5 @@
-import { useMutation, useQueryClient } from "@tanstack/react-query";
-import { api, type LeadInput, type LeadResponse } from "../../shared/routes";
+import { useMutation } from "@tanstack/react-query";
+import { api, type LeadInput } from "../../shared/routes";
 // import { useToast } from "@/hooks/use-toast";
 import { useToast } from "./use-toast";
 export function useCreateLead() {

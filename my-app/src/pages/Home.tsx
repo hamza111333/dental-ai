@@ -17,10 +17,8 @@ import {
   ArrowRight, 
   CheckCircle2,
   Sparkles,
-  Stethoscope,
   MessageSquare,
   Calendar,
-  Check,
   UserCheck,
   X,
   Play
@@ -55,9 +53,9 @@ export default function Home() {
     return () => clearInterval(timer);
   }, []);
 
-  const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-  };
+//   const scrollToContact = () => {
+//     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+//   };
 
   return (
     <div className="min-h-screen bg-slate-50 font-body selection:bg-primary/20 selection:text-primary-foreground">
