@@ -594,9 +594,7 @@ export default function Home() {
                 url="https://calendly.com/hamza-vegeta750/30min"
                 styles={{
                     height: '700px',
-                    width: '100%',
-                    zoom: 1.3
-                }}
+                    width: '100%'                }}
                 />
             </div>
             </div>
