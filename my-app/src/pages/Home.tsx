@@ -126,7 +126,8 @@ export default function Home() {
         </Dialog>
 
         {/* Hero Section */}
-        <section className="relative h-[calc(100vh-113px)] min-h-[700px] flex items-center overflow-hidden bg-white">
+        {/* <section className="relative h-[calc(100vh-113px)] min-h-[700px] flex items-center overflow-hidden bg-white"> */}
+        <section className="relative min-h-screen lg:h-[calc(100vh-113px)] flex items-center overflow-hidden bg-white py-16 lg:py-0">
             <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/3" />
             <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-indigo-500/5 rounded-full blur-3xl translate-y-1/2 -translate-x-1/3" />
