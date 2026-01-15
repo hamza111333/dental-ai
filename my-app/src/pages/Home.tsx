@@ -33,6 +33,32 @@ import {
 } from "../components/ui/dialog";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
+function CalendlyEmbed() {
+    const [mounted, setMounted] = useState(false);
+  
+    useEffect(() => {
+      const t = setTimeout(() => setMounted(true), 800);
+      return () => clearTimeout(t);
+    }, []);
+  
+    if (!mounted) {
+      return (
+        <div className="h-[700px] flex items-center justify-center bg-slate-50 rounded-2xl">
+          <span className="text-slate-400 text-sm animate-pulse">
+            Loading scheduler…
+          </span>
+        </div>
+      );
+    }
+  
+    return (
+      <InlineWidget
+        url="https://calendly.com/hamza-vegeta750/30min"
+        styles={{ height: "700px", width: "100%" }}
+      />
+    );
+  }  
+
 export default function Home() {
   const [animationStep, setAnimationStep] = useState(0);
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
@@ -591,12 +617,13 @@ export default function Home() {
             </div>
             
             <div className="bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl min-h-[700px]">
-                <InlineWidget 
+                {/* <InlineWidget 
                 url="https://calendly.com/hamza-vegeta750/30min"
                 styles={{
                     height: '700px',
                     width: '100%'                }}
-                />
+                /> */}
+                <CalendlyEmbed />
             </div>
             </div>
         </section>
