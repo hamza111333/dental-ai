@@ -7,6 +7,8 @@ import { Button } from "../components/ui/button";
 import { InlineWidget } from "react-calendly";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
+import { StableCalendly } from "../components/ui/stable-calendly";
+
 import { 
   Phone, 
   CalendarCheck, 
@@ -280,7 +282,7 @@ export default function Home() {
                                     key={call.id}
                                     initial={{ opacity: 0, x: -20 }}
                                     animate={{ opacity: 1, x: 0 }}
-                                    transition={{ delay: call.delay, duration: 0.5 }}
+                                    transition={{ delay: call.delay, duration: 0.3 }}
                                     className="relative flex items-center gap-3 p-3 rounded-lg bg-white shadow-sm border border-slate-100 group"
                                     >
                                     <div className="relative">
@@ -403,7 +405,7 @@ export default function Home() {
                 },
                 { 
                     title: "Multiple Calls, One System", 
-                    desc: "Handles several patients at the same time. No hold queues. No overload.",
+                    desc: "Handles multiple calls at the same time. No hold queues. No overload.",
                     icon: BrainCircuit
                 },
                 { 
@@ -418,7 +420,7 @@ export default function Home() {
                 },
                 { 
                     title: "A Full Front Desk, Automated", 
-                    desc: "Appointment booking, rescheduling, reminders — without new hires.",
+                    desc: "Appointment booking, rescheduling, cancelations — without new hires.",
                     icon: Users
                 },
                 { 
@@ -451,24 +453,25 @@ export default function Home() {
             <div className="max-w-[1800px] mx-auto px-6 sm:px-10 lg:px-20 relative z-10 w-full">
             <div className="grid grid-cols-1 md:grid-cols-5 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-indigo-800/50">
                 <div className="p-4">
-                <div className="text-5xl font-display font-bold text-indigo-300 mb-4">30%</div>
+                <div className="text-5xl font-display font-bold text-indigo-300 mb-4">50%</div>
                 <p className="text-lg text-indigo-100">Reduction in administrative overhead costs</p>
                 </div>
                 <div className="p-4">
-                <div className="text-5xl font-display font-bold text-teal-300 mb-4">0</div>
-                <p className="text-lg text-indigo-100">Missed calls — every patient gets answered</p>
-                </div>
-                <div className="p-4">
-                <div className="text-5xl font-display font-bold text-indigo-300 mb-4">24/7</div>
-                <p className="text-lg text-indigo-100">Patient support coverage</p>
-                </div>
-                <div className="p-4">
-                <div className="text-5xl font-display font-bold text-teal-300 mb-4">100%</div>
-                <p className="text-lg text-indigo-100">Automated call handling</p>
-                </div>
-                <div className="p-4">
-                <div className="text-5xl font-display font-bold text-indigo-300 mb-4">3X</div>
+                <div className="text-5xl font-display font-bold text-teal-300 mb-4">3X</div>
                 <p className="text-lg text-indigo-100">More appointments booked</p>
+                </div>
+                <div className="p-4">
+                <div className="text-5xl font-display font-bold text-indigo-300 mb-4">0</div>
+                <p className="text-lg text-indigo-100">Missed calls </p>
+                <p className="text-lg text-indigo-100">Every patient gets answered</p>
+                </div>
+                <div className="p-4">
+                <div className="text-5xl font-display font-bold text-teal-300 mb-4">24/7</div>
+                <p className="text-lg text-indigo-100">Always-on call handling</p>
+                </div>
+                <div className="p-4">
+                <div className="text-5xl font-display font-bold text-indigo-300 mb-4">100%</div>
+                <p className="text-lg text-indigo-100">Calls handled automatically</p>
                 </div>
             </div>
             </div>
@@ -623,7 +626,7 @@ export default function Home() {
                     height: '700px',
                     width: '100%'                }}
                 /> */}
-                <CalendlyEmbed />
+                <StableCalendly />
             </div>
             </div>
         </section>
