@@ -4,7 +4,7 @@
 import { Navbar } from "../components/Navbar";
 import { Button } from "../components/ui/button";
 // import { FeatureCard } from "../components/FeatureCard";
-import { InlineWidget } from "react-calendly";
+// import { InlineWidget } from "react-calendly";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import { StableCalendly } from "../components/ui/stable-calendly";
@@ -35,31 +35,31 @@ import {
 } from "../components/ui/dialog";
 import * as VisuallyHidden from "@radix-ui/react-visually-hidden";
 
-function CalendlyEmbed() {
-    const [mounted, setMounted] = useState(false);
+// function CalendlyEmbed() {
+//     const [mounted, setMounted] = useState(false);
   
-    useEffect(() => {
-      const t = setTimeout(() => setMounted(true), 800);
-      return () => clearTimeout(t);
-    }, []);
+//     useEffect(() => {
+//       const t = setTimeout(() => setMounted(true), 800);
+//       return () => clearTimeout(t);
+//     }, []);
   
-    if (!mounted) {
-      return (
-        <div className="h-[700px] flex items-center justify-center bg-slate-50 rounded-2xl">
-          <span className="text-slate-400 text-sm animate-pulse">
-            Loading scheduler…
-          </span>
-        </div>
-      );
-    }
+//     if (!mounted) {
+//       return (
+//         <div className="h-[700px] flex items-center justify-center bg-slate-50 rounded-2xl">
+//           <span className="text-slate-400 text-sm animate-pulse">
+//             Loading scheduler…
+//           </span>
+//         </div>
+//       );
+//     }
   
-    return (
-      <InlineWidget
-        url="https://calendly.com/hamza-vegeta750/30min"
-        styles={{ height: "700px", width: "100%" }}
-      />
-    );
-  }  
+//     return (
+//       <InlineWidget
+//         url="https://calendly.com/hamza-vegeta750/30min"
+//         styles={{ height: "700px", width: "100%" }}
+//       />
+//     );
+//   }  
 
 export default function Home() {
   const [animationStep, setAnimationStep] = useState(0);
