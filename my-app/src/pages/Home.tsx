@@ -66,11 +66,11 @@ export default function Home() {
   const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const steps = [
     { id: 'calls', label: 'Handling Calls' },
-    { id: 'answering', label: 'AI Answering Calls', icon: Phone, text: "Inbound calls from Patients..." },
-    { id: 'queries', label: 'AI Answering Queries', icon: MessageSquare, text: "Explaining insurance coverage..." },
-    { id: 'booking', label: 'AI Booking Appointments', icon: Calendar, text: "Scheduling Dr. Smith for Tuesday..." },
+    { id: 'answering', label: 'AI Answering Calls', icon: Phone, text: "Inbound calls from Leads..." },
+    { id: 'queries', label: 'AI Answering Queries', icon: MessageSquare, text: "Answering their questions..." },
+    { id: 'booking', label: 'AI Booking Appointments', icon: Calendar, text: "Scheduling Mr. Smith for Tuesday..." },
     { id: 'rescheduling', label: 'AI Rescheduling', icon: CalendarCheck, text: "Moving appointments to Friday..." },
-    { id: 'ending', label: 'Call Completed', icon: UserCheck, text: "Syncing details to practice management..." },
+    { id: 'ending', label: 'Call Completed', icon: UserCheck, text: "Syncing details to Management..." },
     { id: 'roi', label: 'Revenue Recovered', icon: Sparkles, text: "Profitability & Efficiency Secured" }
   ];
 
@@ -177,12 +177,13 @@ export default function Home() {
                 </div>
                 
                 <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 leading-[1.1] mb-6">
-                    Never Miss a <br/>
-                    <span className="text-gradient">Patient Call</span> Again.
+                    Turn Missed Calls  <br/>
+                    <span className="text-gradient"> Into Booked Jobs - Automatically</span>
                 </h1>
                 
                 <p className="text-xl text-slate-600 mb-10 max-w-lg leading-relaxed">
-                    Our 24/7 AI receptionist answers calls, books appointments, and manages your waitlist naturally — just like your best staff member.
+                    {/* Our 24/7 AI receptionist answers calls, books appointments, and manages your waitlist naturally — just like your best staff member. */}
+We help HVAC and plumbing businesses capture every lead and turn them into booked jobs — even during busy hours and after hours.                
                 </p>
                 
                 <div className="flex flex-col sm:flex-row gap-4 mb-12">
@@ -208,15 +209,15 @@ export default function Home() {
                 <div className="flex flex-wrap items-center gap-8 text-sm font-medium text-slate-500">
                     <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    <span>Used by dozens of practices</span>
+                    {/* <span>Used by dozens of practices</span> */}
                     </div>
                     <div className="flex items-center gap-2">
-                    <CheckCircle2 className="w-5 h-5 text-green-500" />
+                    {/* <CheckCircle2 className="w-5 h-5 text-green-500" /> */}
                     <span>24/7 Availability</span>
                     </div>
                     <div className="flex items-center gap-2 text-indigo-600">
-                    <CheckCircle2 className="w-5 h-5 text-green-500" />
-                    <span>HIPAA Complaint</span>
+                    {/* <CheckCircle2 className="w-5 h-5 text-green-500" /> */}
+                    {/* <span>HIPAA Complaint</span> */}
                     </div>
                     <div className="flex items-center gap-2 text-indigo-600">
                     <Sparkles className="w-5 h-5" />
@@ -274,7 +275,7 @@ export default function Home() {
                                 className="space-y-2"
                                 >
                                 {[
-                                    { id: 1, name: "New Patient Inquiry", delay: 0 },
+                                    { id: 1, name: "New Lead Inquiry", delay: 0 },
                                     { id: 2, name: "Appointment Request", delay: 0.5 },
                                     { id: 3, name: "General Question", delay: 1 }
                                 ].map((call) => (
@@ -392,7 +393,7 @@ export default function Home() {
                 Why Clinics Choose Us
                 </h2>
                 <p className="text-xl text-slate-600">
-                The modern standard for patient communication and revenue optimization.
+                The modern standard for communication and revenue optimization.
                 </p>
             </div>
             
@@ -400,7 +401,7 @@ export default function Home() {
                 {[
                 { 
                     title: "Zero Missed Calls", 
-                    desc: "Every call is answered instantly — no voicemail, no lost patients.",
+                    desc: "Every call is answered instantly — no voicemail, no lost leads.",
                     icon: Phone
                 },
                 { 
@@ -415,7 +416,7 @@ export default function Home() {
                 },
                 { 
                     title: "Always Available", 
-                    desc: "Patients reach your clinic 24/7 — evenings, weekends, holidays.",
+                    desc: "Customers can reach you 24/7 — evenings, weekends, and holidays.",
                     icon: Clock
                 },
                 { 
@@ -424,8 +425,8 @@ export default function Home() {
                     icon: Users
                 },
                 { 
-                    title: "Revenue-Positive by Design", 
-                    desc: "Recovers missed appointments and pays for itself within weeks.",
+                    title: "Built to Grow Your Revenue", 
+                    desc: "Every missed call becomes a booked job — see returns in just weeks.",
                     icon: Activity
                 }
                 ].map((item, i) => (
@@ -451,11 +452,11 @@ export default function Home() {
             
             {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"> */}
             <div className="max-w-[1800px] mx-auto px-6 sm:px-10 lg:px-20 relative z-10 w-full">
-            <div className="grid grid-cols-1 md:grid-cols-5 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-indigo-800/50">
-                <div className="p-4">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-center divide-y md:divide-y-0 md:divide-x divide-indigo-800/50">
+                {/* <div className="p-4">
                 <div className="text-5xl font-display font-bold text-indigo-300 mb-4">50%</div>
                 <p className="text-lg text-indigo-100">Reduction in administrative overhead costs</p>
-                </div>
+                </div> */}
                 <div className="p-4">
                 <div className="text-5xl font-display font-bold text-teal-300 mb-4">3X</div>
                 <p className="text-lg text-indigo-100">More appointments booked</p>
@@ -463,7 +464,7 @@ export default function Home() {
                 <div className="p-4">
                 <div className="text-5xl font-display font-bold text-indigo-300 mb-4">0</div>
                 <p className="text-lg text-indigo-100">Missed calls </p>
-                <p className="text-lg text-indigo-100">Every patient gets answered</p>
+                <p className="text-lg text-indigo-100">Every lead gets answered</p>
                 </div>
                 <div className="p-4">
                 <div className="text-5xl font-display font-bold text-teal-300 mb-4">24/7</div>
@@ -502,6 +503,14 @@ export default function Home() {
             </div>
         </section>
 
+        {/* <section className="bg-slate-900 py-20 relative overflow-hidden">
+            <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-px bg-gradient-to-r from-transparent via-primary to-transparent opacity-30" />
+            
+        </section> */}
+        
+
+
         {/* Features Grid */}
         <section id="features" className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -515,12 +524,12 @@ export default function Home() {
                     <span className="text-gradient">Answering Service</span>
                 </h2>
                 <p className="text-xl text-slate-600 leading-relaxed max-w-xl">
-                    Our AI system acts as a high-performance extension of your team, handling complex scheduling, triage, and patient inquiries with clinical precision.
+                    Our AI system acts as a high-performance extension of your team, handling complex scheduling, triage, and lead inquiries with precision.
                 </p>
                 </div>
                 <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-10">
                 {[
-                    { title: "Smart Triage", icon: BrainCircuit, desc: "Instantly routes urgent patient needs." },
+                    { title: "Smart Triage", icon: BrainCircuit, desc: "Instantly routes urgent leads needs." },
                     { title: "Auto-Sync", icon: CalendarCheck, desc: "Real-time calendar integration." },
                     { title: "Natural Voice", icon: Phone, desc: "Indistinguishable from human staff." },
                     { title: "Zero Latency", icon: Activity, desc: "Sub-second response times." }
@@ -551,8 +560,8 @@ export default function Home() {
                 
                 <div className="space-y-10">
                     {[
-                    { title: "Call Comes In", desc: "Patient calls your practice number. AI picks up instantly, even when your staff is busy." },
-                    { title: "Intelligent Conversation", desc: "The AI greets the patient, understands their intent, and answers questions naturally." },
+                    { title: "Call Comes In", desc: "Lead calls your number. AI picks up instantly, even when your staff is busy." },
+                    { title: "Intelligent Conversation", desc: "The AI greets the lead, understands their intent, and answers questions naturally." },
                     { title: "Action Taken", desc: "Whether booking an appointment or taking a message, the task is completed immediately." },
                     { title: "Schedule Updated", desc: "All details are logged and your schedule is updated automatically." }
                     ].map((step, i) => (
@@ -579,17 +588,17 @@ export default function Home() {
                     </div>
                     <div className="flex justify-end">
                         <div className="bg-primary text-white rounded-2xl rounded-tr-none p-4 max-w-[80%] shadow-lg shadow-primary/20">
-                        I can help with that. Are you a new or returning patient?
+                        I can help with that. Are you a new or returning customer?
                         </div>
                     </div>
                     <div className="flex justify-start">
                         <div className="bg-slate-100 rounded-2xl rounded-tl-none p-4 max-w-[80%] text-slate-700">
-                        Returning patient. My name is John Doe.
+                        Returning. My name is John Doe.
                         </div>
                     </div>
                     <div className="flex justify-end">
                         <div className="bg-primary text-white rounded-2xl rounded-tr-none p-4 max-w-[80%] shadow-lg shadow-primary/20">
-                        Thanks, John. I see Dr. Smith has an opening at 2:00 PM next Tuesday. Should I book that for you?
+                        Thanks, John. I see an opening at 2:00 PM next Tuesday. Should I book that for you?
                         </div>
                     </div>
                     </div>
@@ -615,7 +624,7 @@ export default function Home() {
                 Book Your Live Demo
                 </h2>
                 <p className="text-lg text-slate-600">
-                Schedule a 15-minute call to see how LoopCore AI can transform your practice's front desk.
+                Schedule a 15-minute call to see how LoopCore AI can transform your front desk.
                 </p>
             </div>
             
@@ -642,7 +651,7 @@ export default function Home() {
                 </span>
                 </div>
                 <div className="text-sm">
-                © 2026 LoopCoreAI. All rights reserved.
+                © 2026 LoopCoreAI
                 </div>
                 <div className="flex gap-6 text-sm font-medium">
                 <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
