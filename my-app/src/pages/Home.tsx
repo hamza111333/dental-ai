@@ -560,7 +560,7 @@ We help HVAC and plumbing businesses capture every lead and turn them into booke
                 
                 <div className="space-y-10">
                     {[
-                    { title: "Call Comes In", desc: "Lead calls your number. AI picks up instantly, even when your staff is busy." },
+                    { title: "Call Comes In", desc: "Customer calls your number. AI picks up instantly, even when your staff is busy." },
                     { title: "Intelligent Conversation", desc: "The AI greets the lead, understands their intent, and answers questions naturally." },
                     { title: "Action Taken", desc: "Whether booking an appointment or taking a message, the task is completed immediately." },
                     { title: "Schedule Updated", desc: "All details are logged and your schedule is updated automatically." }
