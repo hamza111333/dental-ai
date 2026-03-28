@@ -390,7 +390,7 @@ We help HVAC and plumbing businesses capture every lead and turn them into booke
             <div className="max-w-[1800px] mx-auto px-6 sm:px-10 lg:px-20 relative z-10 w-full">
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-5xl lg:text-6xl font-display font-bold text-slate-900 mb-6">
-                Why Clinics Choose Us
+                Why Businesses Choose Us
                 </h2>
                 <p className="text-xl text-slate-600">
                 The modern standard for communication and revenue optimization.
