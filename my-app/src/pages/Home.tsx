@@ -178,7 +178,7 @@ export default function Home() {
                 
                 <h1 className="text-5xl lg:text-7xl font-display font-bold text-slate-900 leading-[1.1] mb-6">
                     Turn Missed Calls  <br/>
-                    <span className="text-gradient"> Into Booked Jobs - Automatically</span>
+                    <span className="text-gradient"> Into Booked Jobs Automatically</span>
                 </h1>
                 
                 <p className="text-xl text-slate-600 mb-10 max-w-lg leading-relaxed">
@@ -195,7 +195,7 @@ We help HVAC and plumbing businesses capture every lead and turn them into booke
                     Book Demo
                     <ArrowRight className="w-5 h-5 ml-2" />
                     </Button>
-                    <Button 
+                    {/* <Button 
                     variant="outline" 
                     size="lg" 
                     onClick={() => setIsVideoModalOpen(true)}
@@ -203,7 +203,7 @@ We help HVAC and plumbing businesses capture every lead and turn them into booke
                     >
                     <Play className="w-5 h-5 mr-2 fill-primary text-primary" />
                     Listen to Demo
-                    </Button>
+                    </Button> */}
                 </div>
 
                 <div className="flex flex-wrap items-center gap-8 text-sm font-medium text-slate-500">
