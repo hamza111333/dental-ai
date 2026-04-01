@@ -23,7 +23,7 @@ import {
   Calendar,
   UserCheck,
   X,
-//   Play
+  Play
 } from "lucide-react";
 import { motion } from "framer-motion";
 import {
@@ -195,7 +195,7 @@ We help HVAC and plumbing businesses capture every lead and turn them into booke
                     Book Demo
                     <ArrowRight className="w-5 h-5 ml-2" />
                     </Button>
-                    {/* <Button 
+                    <Button 
                     variant="outline" 
                     size="lg" 
                     onClick={() => setIsVideoModalOpen(true)}
@@ -203,7 +203,7 @@ We help HVAC and plumbing businesses capture every lead and turn them into booke
                     >
                     <Play className="w-5 h-5 mr-2 fill-primary text-primary" />
                     Listen to Demo
-                    </Button> */}
+                    </Button>
                 </div>
 
                 <div className="flex flex-wrap items-center gap-8 text-sm font-medium text-slate-500">
